@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird Clone</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: black;
+    }
+    #game-container {
+      width: 100vw;
+      height: 100vh;
+    }
+    #start-btn, #restart-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      z-index: 10;
+    }
+    #start-btn {
+      background: #ffcc00;
+    }
+    #restart-btn {
+      background: #00ccff;
+      top: 60%;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container"></div>
+  <button id="start-btn">Start Game</button>
+<button id="restart-btn" style="display: none;">Restart</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
